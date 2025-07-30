@@ -108,6 +108,49 @@ az storage blob list \
 
 ---
 
+## 🧰 Azure DevOps (az devops extension required)
+
+### Set the default organization/project
+```bash
+az devops configure --defaults organization=https://dev.azure.com/MyOrg project=MyProject
+```
+
+### Queue a pipeline run
+```bash
+az pipelines run --name "MyPipeline"
+```
+
+### List build pipelines
+```bash
+az pipelines list --output table
+```
+
+### List recent pipeline runs
+```bash
+az pipelines runs list --top 5 --output table
+```
+
+---
+
+## 🔐 Azure Key Vault
+
+### List Secrets
+```bash
+az keyvault secret list --vault-name MyKeyVault --output table
+```
+
+### Get a Secret's Value
+```bash
+az keyvault secret show --vault-name MyKeyVault --name MySecret --query value -o tsv
+```
+
+### Set a Secret
+```bash
+az keyvault secret set --vault-name MyKeyVault --name MySecret --value "myvalue"
+```
+
+---
+
 ## 🌐 App Services
 
 ### List all App Services
