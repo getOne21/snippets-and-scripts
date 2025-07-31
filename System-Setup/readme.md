@@ -20,8 +20,8 @@ This guide provides a one-shot setup script to provision a new Windows developme
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
 # Download and run the bootstrap script
-Invoke-WebRequest -Uri "https://github.com/getOne21/snippets-and-scripts/blob/main/System-Setup/scripts/install.ps1" -OutFile "system-setup-install.ps1"
-.install.ps1
+Invoke-WebRequest -Uri "https://github.com/getOne21/snippets-and-scripts/blob/main/System-Setup/Scripts/initial.ps1" -OutFile "system-setup-install.ps1"
+.initial.ps1
 ```
 
 ---
@@ -45,7 +45,7 @@ Invoke-WebRequest -Uri "https://github.com/getOne21/snippets-and-scripts/blob/ma
 
 ---
 
-## 📜 `Install.ps1`
+## 📜 `Initial.ps1`
 
 ```powershell
 # Install Chocolatey

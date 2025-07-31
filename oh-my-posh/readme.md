@@ -100,5 +100,3 @@ To create your own prompt segments (e.g., disk usage, Git info, etc.), edit the 
 - [Themes](https://ohmyposh.dev/docs/themes)
 
 ---
-
-## ✅ Done
