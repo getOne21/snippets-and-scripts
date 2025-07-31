@@ -22,7 +22,8 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > .NET CLI ('dotnet') Commands for building, running, testing and managing .NET apps from command line.
 
-📄 [Commands](DotNet/cli-commands.md)
+- 📄 [Commands](DotNet/cli-commands.md)
+- 📄 [ReSharper](DotNet/resharper.md)
 
 ---
 
@@ -30,7 +31,7 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > Manage, deploy, and automate resources in Azure with CLI and ARM snippets.
 
-📄 [Scripts & Commands](Azure/scripts-and-commands.md)
+- 📄 [Scripts & Commands](Azure/scripts-and-commands.md)
 
 ---
 
@@ -38,8 +39,8 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > Build, ship, and run containers with helpful commands and automation.
 
-📦 [Installation Guide](Docker/install.md)  
-🛠️ [Scripts & Commands](Docker/scripts-and-commands.md)
+- 📦 [Installation Guide](Docker/install.md)  
+- 🛠️ [Scripts & Commands](Docker/scripts-and-commands.md)
 
 ---
 
@@ -47,8 +48,8 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > Beautiful PowerShell prompts, custom fonts, and themes.
 
-📘 [Installation Guide & Commands](Oh-My-Posh/readme.md)  
-🎨 [Themes](Oh-My-Posh/Themes)
+- 📘 [Installation Guide & Commands](Oh-My-Posh/readme.md)  
+- 🎨 [Themes](Oh-My-Posh/Themes)
 
 ---
 
@@ -56,7 +57,7 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > Handy scripts, aliases, and system utilities to enhance your shell experience.
 
-🛠️ [Scripts & Commands](Powershell/scripts-and-commands.md)
+- 🛠️ [Scripts & Commands](Powershell/scripts-and-commands.md)
 
 ---
 
@@ -64,7 +65,7 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > Fast and clean version control with advanced Git workflows, aliases, and tricks.
 
-📘 [Commands & More](Git/commands.md)
+- 📘 [Commands & More](Git/commands.md)
 
 ---
 
@@ -72,7 +73,7 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > The best way to install everything in one terminal. Install scripts and curated packages.
 
-📦 [Installation Guide & Commands](Chocolatey/install-guide-and-commands.md)
+- 📦 [Installation Guide & Commands](Chocolatey/install-guide-and-commands.md)
 
 ---
 
@@ -80,8 +81,8 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > One-shot scripts to set up a new development machine with your favorite tools.
 
-🧭 [Installation Guide](System-Setup/readme.md)  
-🛠️ [Setup Script](System-Setup/Scripts/initial.ps1)
+- 🧭 [Installation Guide](System-Setup/readme.md)  
+- 🛠️ [Setup Script](System-Setup/Scripts/initial.ps1)
 
 ---
 
