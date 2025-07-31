@@ -1,0 +1,99 @@
+name: 🚀 Azure Multi-Stage Deploy (.NET + Bicep)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'prod'
+        type: choice
+        options:
+          - prod
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy-dev:
+    if: github.event_name == 'push'
+    name: Deploy to Dev
+    runs-on: ubuntu-latest
+    environment: development
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+
+    - name: Restore, Build, Publish
+      run: |
+        dotnet restore
+        dotnet build --configuration Release
+        dotnet publish -c Release -o publish
+
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+    - name: Deploy Infrastructure (Dev)
+      uses: azure/arm-deploy@v1
+      with:
+        resourceGroupName: 'rg-dev-app'
+        template: Templates/webapp-full.bicep
+        parameters: siteName='dev-dotnetapp' hostingPlanName='dev-serviceplan' environment='Development'
+
+    - name: Deploy App Package (Dev)
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: 'dev-dotnetapp'
+        package: ./publish
+
+  deploy-prod:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'prod'
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+
+    - name: Restore, Build, Publish
+      run: |
+        dotnet restore
+        dotnet build --configuration Release
+        dotnet publish -c Release -o publish
+
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+    - name: Deploy Infrastructure (Prod)
+      uses: azure/arm-deploy@v1
+      with:
+        resourceGroupName: 'rg-prod-app'
+        template: Templates/webapp-full.bicep
+        parameters: siteName='prod-dotnetapp' hostingPlanName='prod-serviceplan' environment='Production'
+
+    - name: Deploy App Package (Prod)
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: 'prod-dotnetapp'
+        package: ./publish

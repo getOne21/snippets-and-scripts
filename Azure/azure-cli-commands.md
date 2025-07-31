@@ -7,21 +7,25 @@ This document contains frequently used Azure CLI commands and reusable scripts t
 ## 🔐 Authentication & Account Management
 
 ### Login to Azure
+
 ```bash
 az login
 ```
 
 ### Login using device code (useful for WSL, SSH, etc.)
+
 ```bash
 az login --use-device-code
 ```
 
 ### List available subscriptions
+
 ```bash
 az account list --output table
 ```
 
 ### Set default subscription
+
 ```bash
 az account set --subscription "<SUBSCRIPTION_NAME_OR_ID>"
 ```
@@ -31,16 +35,19 @@ az account set --subscription "<SUBSCRIPTION_NAME_OR_ID>"
 ## 📁 Resource Group Management
 
 ### List all resource groups
+
 ```bash
 az group list --output table
 ```
 
 ### Create a new resource group
+
 ```bash
 az group create --name MyResourceGroup --location westeurope
 ```
 
 ### Delete a resource group
+
 ```bash
 az group delete --name MyResourceGroup --yes --no-wait
 ```
@@ -50,26 +57,31 @@ az group delete --name MyResourceGroup --yes --no-wait
 ## 🖥️ Virtual Machine Management
 
 ### Start a VM
+
 ```bash
 az vm start --name MyVM --resource-group MyResourceGroup
 ```
 
 ### Stop a VM
+
 ```bash
 az vm stop --name MyVM --resource-group MyResourceGroup
 ```
 
 ### Restart a VM
+
 ```bash
 az vm restart --name MyVM --resource-group MyResourceGroup
 ```
 
 ### Get public IP of a VM
+
 ```bash
 az vm list-ip-addresses --name MyVM --output table
 ```
 
 ### Run command inside a Linux VM
+
 ```bash
 az vm run-command invoke \
   --command-id RunShellScript \
@@ -83,11 +95,13 @@ az vm run-command invoke \
 ## ☁️ Azure Storage
 
 ### List storage accounts
+
 ```bash
 az storage account list --output table
 ```
 
 ### Upload a file to Blob Storage
+
 ```bash
 az storage blob upload \
   --account-name <StorageAccountName> \
@@ -99,6 +113,7 @@ az storage blob upload \
 > You may need to pass `--auth-mode login` or a connection string.
 
 ### List blobs in a container
+
 ```bash
 az storage blob list \
   --account-name <StorageAccountName> \
@@ -111,21 +126,25 @@ az storage blob list \
 ## 🧰 Azure DevOps (az devops extension required)
 
 ### Set the default organization/project
+
 ```bash
 az devops configure --defaults organization=https://dev.azure.com/MyOrg project=MyProject
 ```
 
 ### Queue a pipeline run
+
 ```bash
 az pipelines run --name "MyPipeline"
 ```
 
 ### List build pipelines
+
 ```bash
 az pipelines list --output table
 ```
 
 ### List recent pipeline runs
+
 ```bash
 az pipelines runs list --top 5 --output table
 ```
@@ -135,16 +154,19 @@ az pipelines runs list --top 5 --output table
 ## 🔐 Azure Key Vault
 
 ### List Secrets
+
 ```bash
 az keyvault secret list --vault-name MyKeyVault --output table
 ```
 
 ### Get a Secret's Value
+
 ```bash
 az keyvault secret show --vault-name MyKeyVault --name MySecret --query value -o tsv
 ```
 
 ### Set a Secret
+
 ```bash
 az keyvault secret set --vault-name MyKeyVault --name MySecret --value "myvalue"
 ```
@@ -154,11 +176,13 @@ az keyvault secret set --vault-name MyKeyVault --name MySecret --value "myvalue"
 ## 🌐 App Services
 
 ### List all App Services
+
 ```bash
 az webapp list --output table
 ```
 
 ### Show the default hostname (DNS) of an App Service
+
 ```bash
 az webapp show \
   --name MyApp \
@@ -167,6 +191,7 @@ az webapp show \
 ```
 
 ### Tail application logs
+
 ```bash
 az webapp log tail --name MyApp --resource-group MyResourceGroup
 ```
@@ -176,6 +201,7 @@ az webapp log tail --name MyApp --resource-group MyResourceGroup
 ## 🔄 ARM Template Export
 
 ### Export resource group as ARM template
+
 ```bash
 az group export --name MyResourceGroup > template.json
 ```
@@ -185,6 +211,7 @@ az group export --name MyResourceGroup > template.json
 ## 🧪 Useful Script Snippets
 
 ### Script: Restart All VMs in a Resource Group
+
 ```bash
 #!/bin/bash
 RESOURCE_GROUP="MyResourceGroup"
@@ -197,6 +224,7 @@ done
 ---
 
 ### Script: Start VMs Tagged as `autostart=true`
+
 ```bash
 #!/bin/bash
 az vm list --query "[?tags.autostart=='true'].{name:name, rg:resourceGroup}" -o tsv |
@@ -209,6 +237,7 @@ done
 ---
 
 ### Script: Upload All Files in Folder to Blob Storage
+
 ```bash
 #!/bin/bash
 STORAGE_ACCOUNT="mystorageaccount"
@@ -230,6 +259,7 @@ done
 ---
 
 ### Script: Create Resource Group and Deploy Bicep File
+
 ```bash
 #!/bin/bash
 RESOURCE_GROUP="MyRG"

@@ -9,12 +9,12 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 - 🟦 [.NET CLI](#-net-cli-commands)
 - 🟦 [Azure](#-azure)
 - 🐳 [Docker](#-docker)
+- ⚡ [DevOps & Automation](#-devops--automation)
 - 🎨 [Oh My Posh](#-oh-my-posh)
 - 🧑‍💻 [PowerShell](#-powershell)
 - 🌿 [Git](#-git)
 - 🍫 [Chocolatey](#-chocolatey)
 - 💻 [System Setup](#-system-setup)
-- 🤝 [Contributing](#-contributing)
 
 ---
 
@@ -31,7 +31,8 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 > Manage, deploy, and automate resources in Azure with CLI and ARM snippets.
 
-- 📄 [Scripts & Commands](Azure/scripts-and-commands.md)
+- 📄 [Azure CLI Installation Guide](Azure/azure-cli-install.md)
+- 📄 [Azure CLI Commands](Azure/scripts-and-commands.md)
 
 ---
 
@@ -41,6 +42,16 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 - 📦 [Installation Guide](Docker/install.md)  
 - 🛠️ [Scripts & Commands](Docker/scripts-and-commands.md)
+
+---
+
+## ⚡ DevOps & Automation
+
+> A collection of tools, scripts, and templates to automate cloud infrastructure, deployments, and development pipelines.
+
+- 📦 [Commands & Templates](DevOps-Automation/devops-automation.md)  
+- 🚀 [Full Azure Web App Deployment with Bicep & GitHub Actions](DevOps-Automation/bicep-github-actions.md)
+- 🚀 [Multi-Stage (Dev + Prod) with Bicep & GitHub Actions](DevOps-Automation/webapp-multistage-deploy.md)
 
 ---
 
@@ -86,11 +97,4 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 ---
 
-## 🤝 Contributing
-
-This is primarily a personal toolkit, but contributions are welcome!  
-Feel free to open a PR if you have helpful improvements or new tools to share.
-
----
-
-![GitHub last commit](https://img.shields.io/github/last-commit/getOne21/snippets-and-scripts)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/getOne21/snippets-and-scripts)
