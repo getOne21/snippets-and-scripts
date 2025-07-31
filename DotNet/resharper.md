@@ -1,7 +1,7 @@
-<span>
-    <img src="ReSharper_Icon.png" alt="alt text" style="max-width:80"/>
-    <b style="font-size:40px;">ReSharper | Installation Guide & Commands</b>
-</span>
+<img src="resharper-icon.png" alt="ReSharper" style="max-width:8%"/>
+<b style="font-size:2.0rem; margin: 0px 0px 0px 10px">ReSharper | Installation Guide & Commands </b>
+
+---
 
 [ReSharper](https://www.jetbrains.com/resharper/) is a powerful Visual Studio extension from JetBrains that enhances .NET development with advanced code analysis, refactoring, navigation, and productivity tools.
 

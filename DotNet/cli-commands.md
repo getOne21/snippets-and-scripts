@@ -1,4 +1,6 @@
-# ![Image](dotnet.png) .NET CLI Commands
+<img src="dotnet-logo.png" style="max-width:100px">
+
+# .NET CLI Commands
 
 The .NET CLI (`dotnet`) is a powerful tool for building, running, testing, and managing .NET applications from the command line.
 
