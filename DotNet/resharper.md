@@ -29,7 +29,7 @@
 
 - Use your JetBrains Account or license key.
 - You can also use the 30-day trial.
-- Use the license reset batch to reset the license after expiration: [ReSharperLicenseResetBatch](Scripts/ResharperLicenseReset.bat)
+- Use the license reset batch to reset the license after expiration: [ReSharperTrialLicenseReset.bat](Scripts/ReSharperTrialLicenseReset.bat)
 
 ---
 
