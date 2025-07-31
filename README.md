@@ -1,19 +1,28 @@
-# ⚙️ Daily Developer Toolkit
+# ⚙️ Daily Snippets & Commands
 
-A personal collection of 💡 smart scripts, 🔧 terminal tools, and 🚀 automation hacks for boosting your daily workflow.</p>
+A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snippets for boosting my daily workflow.</p>
 
 ---
 
 ## 📚 Table of Contents
 
+- 🟦 [.NET CLI](#-net-cli-commands)
 - 🟦 [Azure](#-azure)
 - 🐳 [Docker](#-docker)
 - 🎨 [Oh My Posh](#-oh-my-posh)
 - 🧑‍💻 [PowerShell](#-powershell)
 - 🌿 [Git](#-git)
 - 🍫 [Chocolatey](#-chocolatey)
-- 💻 [System Setup Scripts](#-system-setup-scripts)
+- 💻 [System Setup](#-system-setup)
 - 🤝 [Contributing](#-contributing)
+
+---
+
+## 🟦 .NET CLI Commands
+
+> .NET CLI ('dotnet') Commands for building, running, testing and managing .NET apps from command line.
+
+📄 [Commands](DotNet/cli-commands.md)
 
 ---
 
@@ -67,7 +76,7 @@ A personal collection of 💡 smart scripts, 🔧 terminal tools, and 🚀 autom
 
 ---
 
-## 💻 System Setup Scripts
+## 💻 System Setup
 
 > One-shot scripts to set up a new development machine with your favorite tools.
 
