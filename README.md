@@ -10,6 +10,7 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 - 🟦 [Azure](#-azure)
 - 🐳 [Docker](#-docker)
 - ⚡ [DevOps & Automation](#-devops--automation)
+- 🚀 [Angular](#-angular)
 - 🎨 [Oh My Posh](#-oh-my-posh)
 - 🧑‍💻 [PowerShell](#-powershell)
 - 🌿 [Git](#-git)
@@ -52,6 +53,15 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 - 📦 [Commands & Templates](DevOps-Automation/devops-automation.md)  
 - 🚀 [Full Azure Web App Deployment with Bicep & GitHub Actions](DevOps-Automation/bicep-github-actions.md)
 - 🚀 [Multi-Stage (Dev + Prod) with Bicep & GitHub Actions](DevOps-Automation/webapp-multistage-deploy.md)
+
+---
+
+## 🚀 Angular
+
+> Covers the most commonly used Angular CLI commands and useful snippets for quick reference and efficient development.
+
+- 📦 [Snippets & Commands](Angular/angular-snippets-commands.md)  
+- 📦 [NgRx, Component Communication & reusable patterns](Angular/ngrx-component-communication-reusable-patterns.md)
 
 ---
 
