@@ -1,71 +1,86 @@
-# Collection of Snippets and Scripts Used on a Daily Basis
+# ⚙️ Daily Developer Toolkit
 
-This repository provides a curated collection of code snippets, helper scripts, terminal commands, and configurations that I use on a daily basis to improve workflow efficiency and automate routine tasks.
-
-## Contents
-
-- [Azure](#azure)
-- [Docker](#docker)
-- [Oh My Posh](#oh-my-posh)
-- [PowerShell](#powershell)
-- [Git](#git)
-- [Chocolatey](#chocolatey)
+A personal collection of 💡 smart scripts, 🔧 terminal tools, and 🚀 automation hacks for boosting your daily workflow.</p>
 
 ---
 
-## Azure
+## 📚 Table of Contents
 
-Useful scripts and command-line snippets for managing Azure resources, authenticating via CLI, working with ARM templates, and automating resource provisioning.
-
-- [Scripts & Commands](Azure/scripts-and-commands.md)
-
-## Docker
-
-Common Docker CLI commands and scripts for building, running, and managing containers and images locally and in CI/CD pipelines.
-
-- [Installation Guide](Docker/install.md)
-- [Scripts & Commands](Docker/scripts-and-commands.md)
-
-## Oh My Posh
-
-Includes a PowerShell-based installation guide, recommended fonts (e.g., MesloLGS Nerd Font), and customization examples like prompt modules (git, path, time, shell info).
-
-- [Installation Guide & Commands](Oh-My-Posh/readme.md)
-- [Themes](Oh-My-Posh/Themes)
+- 🟦 [Azure](#-azure)
+- 🐳 [Docker](#-docker)
+- 🎨 [Oh My Posh](#-oh-my-posh)
+- 🧑‍💻 [PowerShell](#-powershell)
+- 🌿 [Git](#-git)
+- 🍫 [Chocolatey](#-chocolatey)
+- 💻 [System Setup Scripts](#-system-setup-scripts)
+- 🤝 [Contributing](#-contributing)
 
 ---
 
-## PowerShell
+## 🟦 Azure
 
-Handy PowerShell functions and aliases to speed up scripting, such as file system helpers, disk usage, system info, and custom command wrappers.
+> Manage, deploy, and automate resources in Azure with CLI and ARM snippets.
 
-- [Scripts & Commands](Powershell/scripts-and-commands.md)
-
-## Git
-
-Frequently used Git commands and aliases for effective branching, rebasing, cleaning up history, stashing, or working with remotes.
-
-- [Commands & More](Git/commands.md)
+📄 [Scripts & Commands](Azure/scripts-and-commands.md)
 
 ---
 
-## Chocolatey
+## 🐳 Docker
 
-Installation guide and frequently used chocolatey commands.
+> Build, ship, and run containers with helpful commands and automation.
 
-- [Installation Guide & Commands](Chocolatey/install-guide-and-commands.md)
+📦 [Installation Guide](Docker/install.md)  
+🛠️ [Scripts & Commands](Docker/scripts-and-commands.md)
+
+---
+
+## 🎨 Oh My Posh
+
+> Beautiful PowerShell prompts, custom fonts, and themes.
+
+📘 [Installation Guide & Commands](Oh-My-Posh/readme.md)  
+🎨 [Themes](Oh-My-Posh/Themes)
 
 ---
 
-## System Setup Scripts
+## 🧑‍💻 PowerShell
 
-Initial scripts to set up my machine with all essentials (Choco, Docker, VS 2022 Enterprise, VS Code, Oh My Posh, etc.)
+> Handy scripts, aliases, and system utilities to enhance your shell experience.
 
-- [Installation Guide](System-Setup/readme.md)
-- [System Setup Script](System-Setup/Scripts/initial.ps1)
-
-## Contributing
-
-This is primarily a personal toolkit, but contributions are welcome if you'd like to suggest improvements or submit useful additions via pull request.
+🛠️ [Scripts & Commands](Powershell/scripts-and-commands.md)
 
 ---
+
+## 🌿 Git
+
+> Fast and clean version control with advanced Git workflows, aliases, and tricks.
+
+📘 [Commands & More](Git/commands.md)
+
+---
+
+## 🍫 Chocolatey
+
+> The best way to install everything in one terminal. Install scripts and curated packages.
+
+📦 [Installation Guide & Commands](Chocolatey/install-guide-and-commands.md)
+
+---
+
+## 💻 System Setup Scripts
+
+> One-shot scripts to set up a new development machine with your favorite tools.
+
+🧭 [Installation Guide](System-Setup/readme.md)  
+🛠️ [Setup Script](System-Setup/Scripts/initial.ps1)
+
+---
+
+## 🤝 Contributing
+
+This is primarily a personal toolkit, but contributions are welcome!  
+Feel free to open a PR if you have helpful improvements or new tools to share.
+
+---
+
+![GitHub last commit](https://img.shields.io/github/last-commit/getOne21/snippets-and-scripts)
