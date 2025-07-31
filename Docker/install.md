@@ -1,7 +1,5 @@
 # 🐳 Docker – Install Guide & Useful Commands
 
----
-
 ## 🛠️ Installation on Windows
 
 ### Install Docker Desktop

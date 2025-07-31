@@ -1,6 +1,6 @@
 # Oh My Posh – PowerShell Setup on Windows
 
-> ✨ Beautiful and customizable prompt for PowerShell and Windows Terminal using `Oh My Posh`.
+Beautiful and customizable prompt for PowerShell and Windows Terminal using Oh My Posh.
 
 ---
 

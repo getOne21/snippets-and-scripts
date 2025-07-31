@@ -1,7 +1,4 @@
-
-# 🍫 Chocolatey Package Manager – Install Guide & Useful Commands
-
-## 📦 What is Chocolatey?
+# 🍫 Chocolatey Package Manager
 
 Chocolatey is a Windows package manager that makes it easy to install and manage software from the command line.
 
