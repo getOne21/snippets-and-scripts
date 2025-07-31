@@ -61,8 +61,8 @@ Installation guide and frequently used chocolatey commands.
 
 Initial scripts to set up my machine with all essentials (Choco, Docker, VS 2022 Enterprise, VS Code, Oh My Posh, etc.)
 
-- [Installation Guide](system-setup/readme.md)
-- [System Setup Script](system-setup/scripts/initial.ps1)
+- [Installation Guide](System-Setup/readme.md)
+- [System Setup Script](System-Setup/Scripts/initial.ps1)
 
 ## Contributing
 
