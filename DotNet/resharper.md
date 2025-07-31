@@ -1,4 +1,7 @@
-# ![alt text](image.png) ReSharper – Installation Guide & Commands
+<span>
+    <img src="ReSharper_Icon.png" alt="alt text" style="max-width:80"/>
+    <b style="font-size:40px;">ReSharper | Installation Guide & Commands</b>
+</span>
 
 [ReSharper](https://www.jetbrains.com/resharper/) is a powerful Visual Studio extension from JetBrains that enhances .NET development with advanced code analysis, refactoring, navigation, and productivity tools.
 
@@ -26,7 +29,7 @@
 
 - Use your JetBrains Account or license key.
 - You can also use the 30-day trial.
-- Use the license reset batch to reset the license after expiration: [ResharperLicenseResetBatch](Scripts/ResharperLicenseReset.bat)
+- Use the license reset batch to reset the license after expiration: [ReSharperLicenseResetBatch](Scripts/ResharperLicenseReset.bat)
 
 ---
 
