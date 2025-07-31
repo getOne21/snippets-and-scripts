@@ -23,6 +23,7 @@ Useful scripts and command-line snippets for managing Azure resources, authentic
 
 Common Docker CLI commands and scripts for building, running, and managing containers and images locally and in CI/CD pipelines.
 
+- [Installation Guide](Docker/install.md)
 - [Scripts & Commands](Docker/scripts-and-commands.md)
 
 ## Oh My Posh
@@ -56,12 +57,15 @@ Installation guide and frequently used chocolatey commands.
 
 ---
 
+## System Setup Scripts
+
+Initial scripts to set up my machine with all essentials (Choco, Docker, VS 2022 Enterprise, VS Code, Oh My Posh, etc.)
+
+- [Installation Guide](system-setup/readme.md)
+- [System Setup Script](system-setup/scripts/initial.ps1)
+
 ## Contributing
 
 This is primarily a personal toolkit, but contributions are welcome if you'd like to suggest improvements or submit useful additions via pull request.
 
 ---
-
-## License
-
-MIT License
