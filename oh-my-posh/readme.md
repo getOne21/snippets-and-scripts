@@ -7,6 +7,7 @@
 ## 🚀 Installation Guide (PowerShell on Windows)
 
 ### 🧰 Prerequisites
+
 - Windows 10/11
 - PowerShell (≥ 7 recommended)
 - Windows Terminal (recommended)
@@ -94,10 +95,10 @@ oh-my-posh init pwsh --config "$HOME\my-custom.omp.json" | Invoke-Expression
 ```
 
 To create your own prompt segments (e.g., disk usage, Git info, etc.), edit the JSON using:
-- [Segment reference](https://ohmyposh.dev/docs/segments/intro)
-- [Color palette reference](https://ohmyposh.dev/docs/colors)
+
+- [Segment reference](https://ohmyposh.dev/docs/segments/cli/angular)
+- [Themes](https://ohmyposh.dev/docs/themes)
 
 ---
 
-## ✅ Done!
-
+## ✅ Done
