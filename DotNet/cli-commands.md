@@ -1,4 +1,4 @@
-<img src="dotnet-logo.png" style="max-width:100px">
+<img src="dotnet-logo.png" width="80">
 
 # .NET CLI Commands
 
