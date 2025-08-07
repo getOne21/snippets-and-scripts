@@ -62,6 +62,7 @@ A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snip
 
 - 📦 [Snippets & Commands](Angular/angular-snippets-commands.md)  
 - 📦 [NgRx, Component Communication & reusable patterns](Angular/ngrx-component-communication-reusable-patterns.md)
+- 🌟 [Angular – Architecture, Patterns & Best Practices](Angular/angular-best-practices.md)
 
 ---
 
