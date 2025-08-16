@@ -1,111 +1,123 @@
-# ⚙️ Daily Snippets & Commands
+# ⚙️ Daily Snippets & Commands  
 
-A personal collection of 💡 scripts, 🔧 terminal tools, 🚀 commands & snippets for boosting my daily workflow.</p>
-
----
-
-## 📚 Table of Contents
-
-- 🟦 [.NET CLI](#-net-cli-commands)
-- 🟦 [Azure](#-azure)
-- 🐳 [Docker](#-docker)
-- ⚡ [DevOps & Automation](#-devops--automation)
-- 🚀 [Angular](#-angular)
-- 🎨 [Oh My Posh](#-oh-my-posh)
-- 🧑‍💻 [PowerShell](#-powershell)
-- 🌿 [Git](#-git)
-- 🍫 [Chocolatey](#-chocolatey)
-- 💻 [System Setup](#-system-setup)
+A curated collection of 💡 scripts, 🔧 terminal tools, 🚀 commands, and snippets to supercharge my daily workflow.  
 
 ---
 
-## 🟦 .NET CLI Commands
+## 🏷️ Tech Stack & Tools  
 
-> .NET CLI ('dotnet') Commands for building, running, testing and managing .NET apps from command line.
-
-- 📄 [Commands](DotNet/cli-commands.md)
-- 📄 [ReSharper](DotNet/resharper.md)
-
----
-
-## 🟦 Azure
-
-> Manage, deploy, and automate resources in Azure with CLI and ARM snippets.
-
-- 📄 [Azure CLI Installation Guide](Azure/azure-cli-install.md)
-- 📄 [Azure CLI Commands](Azure/scripts-and-commands.md)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)  
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)  
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)  
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)  
+![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=for-the-badge&logo=chocolatey&logoColor=white)  
 
 ---
 
-## 🐳 Docker
+## 📚 Table of Contents  
 
-> Build, ship, and run containers with helpful commands and automation.
+- 🟦 [.NET CLI](#-net-cli)  
+- ☁️ [Azure](#️-azure)  
+- 🐳 [Docker](#-docker)  
+- ⚡ [DevOps & Automation](#-devops--automation)  
+- 🚀 [Angular](#-angular)  
+- 🎨 [Oh My Posh](#-oh-my-posh)  
+- 🧑‍💻 [PowerShell](#-powershell)  
+- 🌿 [Git](#-git)  
+- 🍫 [Chocolatey](#-chocolatey)  
+- 💻 [System Setup](#-system-setup)  
+
+---
+
+## 🟦 .NET CLI  
+
+> Essential `dotnet` commands for building, running, testing, and managing .NET apps.  
+
+- 📄 [CLI Commands](DotNet/cli-commands.md)  
+- 🛠️ [ReSharper Tools](DotNet/resharper.md)  
+
+---
+
+## ☁️ Azure  
+
+> Manage, deploy, and automate Azure resources with CLI, ARM, and Bicep.  
+
+- 📘 [CLI Installation Guide](Azure/azure-cli-install.md)  
+- 🛠️ [Common CLI Commands](Azure/azure-cli-commands.md)  
+
+---
+
+## 🐳 Docker  
+
+> Build, ship, and run containers with practical guides and automation.  
 
 - 📦 [Installation Guide](Docker/install.md)  
-- 🛠️ [Scripts & Commands](Docker/scripts-and-commands.md)
+- 🛠️ [Scripts & Commands](Docker/scripts-and-commands.md)  
 
 ---
 
-## ⚡ DevOps & Automation
+## ⚡ DevOps & Automation  
 
-> A collection of tools, scripts, and templates to automate cloud infrastructure, deployments, and development pipelines.
+> Tools, scripts, and templates for automating infrastructure and CI/CD workflows.  
 
-- 📦 [Commands & Templates](DevOps-Automation/devops-automation.md)  
-- 🚀 [Full Azure Web App Deployment with Bicep & GitHub Actions](DevOps-Automation/bicep-github-actions.md)
-- 🚀 [Multi-Stage (Dev + Prod) with Bicep & GitHub Actions](DevOps-Automation/webapp-multistage-deploy.md)
+- 📘 [Commands & Templates](DevOps-Automation/devops-automation.md)  
+- 🚀 [Azure Web App Deployment (Bicep + GitHub Actions)](DevOps-Automation/bicep-github-actions.md)  
+- 🚀 [Multi-Stage Deployment (Dev + Prod)](DevOps-Automation/webapp-multistage-deploy.md)  
 
 ---
 
-## 🚀 Angular
+## 🚀 Angular  
 
-> Covers the most commonly used Angular CLI commands and useful snippets for quick reference and efficient development.
+> Handy Angular CLI commands, NgRx patterns, and best practices for clean architecture.  
 
 - 📦 [Snippets & Commands](Angular/angular-snippets-commands.md)  
-- 📦 [NgRx, Component Communication & reusable patterns](Angular/ngrx-component-communication-reusable-patterns.md)
-- 🌟 [Angular – Architecture, Patterns & Best Practices](Angular/angular-best-practices.md)
+- ⚡ [NgRx, Component Communication & Reusable Patterns](Angular/ngrx-component-communication-reusable-patterns.md)  
+- 🌟 [Architecture & Best Practices](Angular/angular-best-practices.md)  
 
 ---
 
-## 🎨 Oh My Posh
+## 🎨 Oh My Posh  
 
-> Beautiful PowerShell prompts, custom fonts, and themes.
+> Beautiful, customizable PowerShell prompts with fonts and themes.  
 
-- 📘 [Installation Guide & Commands](Oh-My-Posh/readme.md)  
-- 🎨 [Themes](Oh-My-Posh/Themes)
-
----
-
-## 🧑‍💻 PowerShell
-
-> Handy scripts, aliases, and system utilities to enhance your shell experience.
-
-- 🛠️ [Scripts & Commands](Powershell/scripts-and-commands.md)
+- 📘 [Installation & Commands](Oh-My-Posh/readme.md)  
+- 🎨 [Themes](Oh-My-Posh/Themes)  
 
 ---
 
-## 🌿 Git
+## 🧑‍💻 PowerShell  
 
-> Fast and clean version control with advanced Git workflows, aliases, and tricks.
+> Scripts, aliases, and utilities to power up the shell experience.  
 
-- 📘 [Commands & More](Git/commands.md)
-
----
-
-## 🍫 Chocolatey
-
-> The best way to install everything in one terminal. Install scripts and curated packages.
-
-- 📦 [Installation Guide & Commands](Chocolatey/install-guide-and-commands.md)
+- 🛠️ [Scripts & Commands](Powershell/scripts-and-commands.md)  
 
 ---
 
-## 💻 System Setup
+## 🌿 Git  
 
-> One-shot scripts to set up a new development machine with your favorite tools.
+> Clean workflows, aliases, and advanced tricks for efficient version control.  
 
-- 🧭 [Installation Guide](System-Setup/readme.md)  
-- 🛠️ [Setup Script](System-Setup/Scripts/initial.ps1)
+- 📘 [Commands & Workflows](Git/commands.md)  
 
 ---
 
-![GitHub Last Commit](https://img.shields.io/github/last-commit/getOne21/snippets-and-scripts)
+## 🍫 Chocolatey  
+
+> Install and manage Windows apps with one terminal command.  
+
+- 📦 [Install Guide & Commands](Chocolatey/install-guide-and-commands.md)  
+
+---
+
+## 💻 System Setup  
+
+> One-shot scripts to bootstrap a new development machine.  
+
+- 🧭 [Setup Guide](System-Setup/readme.md)  
+- 🛠️ [Initial Setup Script](System-Setup/Scripts/initial.ps1)  
+
+---
+
+![GitHub Last Commit](https://img.shields.io/github/last-commit/getOne21/snippets-and-scripts)  
