@@ -1,6 +1,8 @@
-# ⚙️ Daily Snippets & Commands  
+<h1 align="center">⚙️ Daily Snippets & Commands</h1>
 
-A curated collection of 💡 scripts, 🔧 terminal tools, 🚀 commands, and snippets to supercharge my daily workflow.  
+<p align="center">
+  A curated toolbox of scripts and commands which I use daily for <b>.NET</b>, <b>Azure</b>, <b>Angular</b>, <b>Docker</b>, <b>Git</b>, <b>PowerShell</b> & more 🚀
+</p>
 
 ---
 
