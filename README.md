@@ -24,10 +24,11 @@
 
 - 🟦 [.NET CLI](#-net-cli)  
 - ☁️ [Azure](#️-azure)  
-- ☸️ [AKS (Kubernetes on Azure)](#-aks-kubernetes-on-azure)  
+- ☸️ [AKS (Kubernetes on Azure)](#️-aks-kubernetes-on-azure)  
 - 🐳 [Docker](#-docker)  
 - ⚡ [DevOps & Automation](#-devops--automation)  
 - ⚙️ [GitHub Actions](#-github-actions)  
+- 🌍 [Terraform](#-terraform)
 - 🚀 [Angular](#-angular)  
 - 🎨 [Oh My Posh](#-oh-my-posh)  
 - 🧑‍💻 [PowerShell](#-powershell)  
@@ -55,7 +56,7 @@
 
 ---
 
-## ☸️ AKS (Kubernetes on Azure)  
+## ☸️ AKS (Kubernetes on Azure)
 
 > Create, scale, and manage Kubernetes clusters on Azure using AKS with Azure CLI.  
 
@@ -93,6 +94,15 @@
 - ☸️ [Deploy to AKS](GitHub-Actions/deploy-to-aks.md)  
 - 🔑 [Azure Login & Resource Group Deployment](GitHub-Actions/github-actions-azure-login.md)  
 - 🏗️ [Infrastructure as Code (Bicep, ARM, Terraform)](GitHub-Actions/github-actions-iac.md)
+
+---
+
+## 🌍 Terraform  
+
+> Define and manage Azure infrastructure with Infrastructure as Code (IaC) using Terraform.  
+
+- 📘 [Setup Guide](Terraform/terraform-setup.md)  
+- 🏗️ [Azure Resource Deployment](Terraform/terraform-azure-deployment.md)  
 
 ---
 
