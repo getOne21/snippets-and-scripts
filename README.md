@@ -16,6 +16,7 @@
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)  
 ![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=for-the-badge&logo=chocolatey&logoColor=white)  
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)  
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)  
 
 ---
 
@@ -26,6 +27,7 @@
 - ☸️ [AKS (Kubernetes on Azure)](#-aks-kubernetes-on-azure)  
 - 🐳 [Docker](#-docker)  
 - ⚡ [DevOps & Automation](#-devops--automation)  
+- ⚙️ [GitHub Actions](#-github-actions)  
 - 🚀 [Angular](#-angular)  
 - 🎨 [Oh My Posh](#-oh-my-posh)  
 - 🧑‍💻 [PowerShell](#-powershell)  
@@ -78,6 +80,19 @@
 - 📘 [Commands & Templates](DevOps-Automation/devops-automation.md)  
 - 🚀 [Azure Web App Deployment (Bicep + GitHub Actions)](DevOps-Automation/bicep-github-actions.md)  
 - 🚀 [Multi-Stage Deployment (Dev + Prod)](DevOps-Automation/webapp-multistage-deploy.md)  
+
+---
+
+## ⚙️ GitHub Actions  
+
+> Automate build, test, and deployment pipelines directly from GitHub.  
+
+- 🚀 [Setup Basics](GitHub-Actions/github-actions-setup.md)  
+- 🚀 [Advanced Setup & Best Practices](GitHub-Actions/github-actions-advanced.md)  
+- 🐳 [Build & Push Docker Images](GitHub-Actions/build-and-push-docker.md)  
+- ☸️ [Deploy to AKS](GitHub-Actions/deploy-to-aks.md)  
+- 🔑 [Azure Login & Resource Group Deployment](GitHub-Actions/github-actions-azure-login.md)  
+- 🏗️ [Infrastructure as Code (Bicep, ARM, Terraform)](GitHub-Actions/github-actions-iac.md)
 
 ---
 
