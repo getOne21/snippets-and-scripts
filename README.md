@@ -89,6 +89,7 @@
 - 📘 [Commands & Templates](DevOps-Automation/devops-automation.md)  
 - 🚀 [Azure Web App Deployment (Bicep + GitHub Actions)](DevOps-Automation/bicep-github-actions.md)  
 - 🚀 [Multi-Stage Deployment (Dev + Prod)](DevOps-Automation/webapp-multistage-deploy.md)  
+- ⚙️ [Makefile Templates for Build & Deploy](DevOps-Automation/makefile-templates.md)  
 
 ---
 
