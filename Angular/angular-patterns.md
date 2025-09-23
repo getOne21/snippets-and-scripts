@@ -6,6 +6,13 @@ This document expands on the basics with advanced Angular patterns including NgR
 
 ## 📦 State Management with NgRx
 
+### Key Concepts
+
+- **Actions** → Describe state changes  
+- **Reducers** → Define how state changes  
+- **Selectors** → Query state efficiently  
+- **Effects** → Handle async logic (API calls)
+
 Install NgRx:
 
 ```bash
@@ -42,6 +49,28 @@ export const counterReducer = createReducer(
   on(increment, state => state + 1),
   on(decrement, state => state - 1)
 );
+```
+
+Create effect:
+
+```ts
+// counter.effects.ts
+@Injectable()
+export class CounterEffects {
+  loadCounters$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(loadCounters),
+      mergeMap(() =>
+        this.countersService.getAll().pipe(
+          map(counters => loadCountersSuccess({ counters })),
+          catchError(() => of(loadCountersFailure()))
+        )
+      )
+    )
+  );
+
+  constructor(private actions$: Actions, private countersService: CountersService) {}
+}
 ```
 
 Register in module:
@@ -106,6 +135,7 @@ ng g m shared
 ```
 
 Use for:
+
 - Common components
 - Pipes
 - Directives
@@ -124,7 +154,7 @@ export class SharedModule {}
 
 ## 📁 Folder Structure Best Practices
 
-```
+```text
 src/
 ├── app/
 │   ├── core/         # singleton services, auth
@@ -160,6 +190,44 @@ providers: [
   { provide: MyService, useValue: jasmine.createSpyObj('MyService', ['get']) }
 ]
 ```
+
+## 🔔 Angular Signals (Angular 16+)
+
+### Example Signal State
+
+```ts
+import { signal } from '@angular/core';
+
+export class CounterService {
+  count = signal(0);
+
+  increment() {
+    this.count.update(value => value + 1);
+  }
+}
+```
+
+### Example Component Usage
+
+```ts
+@Component({
+  selector: 'app-counter',
+  template: `
+    <button (click)="service.increment()">Increment</button>
+    <p>Count: {{ service.count() }}</p>
+  `
+})
+export class CounterComponent {
+  constructor(public service: CounterService) {}
+}
+```
+
+---
+
+## ✅ When to Use What
+
+- **NgRx** → Large apps, complex state, multiple modules.  
+- **Signals** → Small/medium apps, local state, simple reactive needs.  
 
 ---
 

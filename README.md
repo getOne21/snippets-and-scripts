@@ -39,12 +39,15 @@
 
 ---
 
-## 🟦 .NET CLI  
+## 🟦 .NET Clean Architecture, API Versioning, Caching Strategies, CLI Commands & ReSharper
 
-> Essential `dotnet` commands for building, running, testing, and managing .NET apps.  
+> Essential .NET knowledge about architecture, API versioning, caching strategies, ReSharper and commands for building, running, testing, and managing .NET apps.  
 
+- 🏗️ [.NET Clean Architecture, DI & Testing](DotNet/dotnet-clean-architecture.md)  
 - 📄 [CLI Commands](DotNet/cli-commands.md)  
 - 🛠️ [ReSharper Tools](DotNet/resharper.md)  
+- 🔀 [REST API Versioning in .NET](DotNet/dotnet-api-versioning.md)  
+- ⚡ [Caching Strategies: Redis & MemoryCache](DotNet/dotnet-caching-strategies.md)  
 
 ---
 
@@ -112,7 +115,7 @@
 > Handy Angular CLI commands, NgRx patterns, and best practices for clean architecture.  
 
 - 📦 [Snippets & Commands](Angular/angular-snippets-commands.md)  
-- ⚡ [NgRx, Component Communication & Reusable Patterns](Angular/ngrx-component-communication-reusable-patterns.md)  
+- ⚡ [State Management, Component Communication & Angular Signals](Angular/angular-patterns.md)  
 - 🌟 [Architecture & Best Practices](Angular/angular-best-practices.md)  
 
 ---
