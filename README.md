@@ -1,7 +1,7 @@
-<h1 align="center">⚙️ Daily Snippets & Commands</h1>
+<h1 align="center">⚙️ Daily Used Snippets, Commands And Useful Tutorials</h1>
 
 <p align="center">
-  A curated toolbox of scripts and commands which I use daily for <b>.NET</b>, <b>Azure</b>, <b>Angular</b>, <b>Docker</b>, <b>Git</b>, <b>PowerShell</b> & more 🚀
+  A curated toolbox of scripts, commands and tutorials which I use daily for <b>.NET</b>, <b>Azure</b>, <b>Angular</b>, <b>Docker</b>, <b>Git</b>, <b>PowerShell</b> & more 🚀
 </p>
 
 ---
@@ -15,6 +15,7 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)  
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)  
 ![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=for-the-badge&logo=chocolatey&logoColor=white)  
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)  
 
 ---
 
@@ -22,6 +23,7 @@
 
 - 🟦 [.NET CLI](#-net-cli)  
 - ☁️ [Azure](#️-azure)  
+- ☸️ [AKS (Kubernetes on Azure)](#-aks-kubernetes-on-azure)  
 - 🐳 [Docker](#-docker)  
 - ⚡ [DevOps & Automation](#-devops--automation)  
 - 🚀 [Angular](#-angular)  
@@ -48,6 +50,15 @@
 
 - 📘 [CLI Installation Guide](Azure/azure-cli-install.md)  
 - 🛠️ [Common CLI Commands](Azure/azure-cli-commands.md)  
+
+---
+
+## ☸️ AKS (Kubernetes on Azure)  
+
+> Create, scale, and manage Kubernetes clusters on Azure using AKS with Azure CLI.  
+
+- 📘 [Introduction](AKS/aks-introduction.md)  
+- ⚡ [Advanced Features](AKS/aks-advanced-features.md)  
 
 ---
 
@@ -125,7 +136,7 @@
 ## 📊 Repo Stats  
 
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/getOne21/snippets-and-scripts)  
-![GitHub Repo stars](https://img.shields.io/github/stars/getOne21/snippets-and-scripts?style=social)
-![GitHub forks](https://img.shields.io/github/forks/getOne21/snippets-and-scripts?style=social)
-![GitHub issues](https://img.shields.io/github/issues/getOne21/snippets-and-scripts)
-![GitHub repo size](https://img.shields.io/github/repo-size/getOne21/snippets-and-scripts)
+![GitHub Repo stars](https://img.shields.io/github/stars/getOne21/snippets-and-scripts?style=social)  
+![GitHub forks](https://img.shields.io/github/forks/getOne21/snippets-and-scripts?style=social)  
+![GitHub issues](https://img.shields.io/github/issues/getOne21/snippets-and-scripts)  
+![GitHub repo size](https://img.shields.io/github/repo-size/getOne21/snippets-and-scripts)  
