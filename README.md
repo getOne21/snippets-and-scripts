@@ -18,18 +18,22 @@
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)  
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)  
 ![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)  
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)  
+![Kustomize](https://img.shields.io/badge/Kustomize-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)  
+![Dapr](https://img.shields.io/badge/Dapr-0D2192?style=for-the-badge&logo=dapr&logoColor=white)  
 
 ---
 
 ## 📚 Table of Contents  
 
-- 🟦 [.NET CLI](#-net-cli)  
+- 🟦 [.NET](#-net)  
 - ☁️ [Azure](#️-azure)  
 - ☸️ [AKS (Kubernetes on Azure)](#️-aks-kubernetes-on-azure)  
 - 🐳 [Docker](#-docker)  
 - ⚡ [DevOps & Automation](#-devops--automation)  
 - ⚙️ [GitHub Actions](#-github-actions)  
 - 🌍 [Terraform](#-terraform)
+- ☁️ [Cloud-Native Tools](#️-cloud-native-tools)
 - 🚀 [Angular](#-angular)  
 - 🎨 [Oh My Posh](#-oh-my-posh)  
 - 🧑‍💻 [PowerShell](#-powershell)  
@@ -39,7 +43,7 @@
 
 ---
 
-## 🟦 .NET Clean Architecture, API Versioning, Caching Strategies, CLI Commands & ReSharper
+## 🟦 .NET
 
 > Essential .NET knowledge about architecture, API versioning, caching strategies, ReSharper and commands for building, running, testing, and managing .NET apps.  
 
@@ -107,6 +111,16 @@
 
 - 📘 [Setup Guide](Terraform/terraform-setup.md)  
 - 🏗️ [Azure Resource Deployment](Terraform/terraform-azure-deployment.md)  
+
+---
+
+## ☁️ Cloud-Native Tools  
+
+> Tools for packaging, configuring, and running cloud-native apps on Kubernetes and Azure.  
+
+- 📦 [Helm (Package Kubernetes Apps)](Cloud-Native/helm.md)  
+- ⚡ [Kustomize (Overlay-Based Config Management)](Cloud-Native/kustomize.md)  
+- 🌍 [Dapr (Distributed Application Runtime)](Cloud-Native/dapr.md)  
 
 ---
 
