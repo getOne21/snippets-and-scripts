@@ -28,17 +28,58 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 # Download MesloLGS Nerd Font
 $fontUrl = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip"
 $zipPath = "$env:TEMP\Meslo.zip"
-$fontDir = "$env:LOCALAPPDATA\Microsoft\Windows\Fonts"
+$extractPath = "$env:TEMP\MesloFont"
+$fontDir = "C:\Windows\Fonts"
+$fontsRegPath = "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts"
 
-Invoke-WebRequest -Uri $fontUrl -OutFile $zipPath
-Expand-Archive $zipPath -DestinationPath $env:TEMP\MesloFont -Force
+# Self-elevate if not running as administrator
+if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Write-Host "Restarting as administrator..."
+    $newProcess = Start-Process -FilePath "powershell.exe" `
+        -ArgumentList "-ExecutionPolicy Bypass -File `"$PSCommandPath`"" `
+        -Verb RunAs -WindowStyle Normal -PassThru
+    $newProcess.WaitForExit()
+    exit
+}
+
+Write-Host "Downloading MesloLGS Nerd Font..."
+Invoke-WebRequest -Uri $fontUrl -OutFile $zipPath -UseBasicParsing
+Expand-Archive $zipPath -DestinationPath $extractPath -Force
+
+# Function to install and register system-wide fonts
+function Install-FontSystemWide {
+    param([string]$fontPath)
+
+    $fontName = Split-Path $fontPath -Leaf
+    $destPath = Join-Path $fontDir $fontName
+
+    # Copy the font to the system fonts folder
+    if (-not (Test-Path $fontDir)) {
+        Write-Host "Creating $fontDir ..."
+        New-Item -ItemType Directory -Path $fontDir -Force | Out-Null
+    }
+
+    Copy-Item -Path $fontPath -Destination $destPath -Force
+    Write-Host "Copied: $fontName"
+
+    # Register font in registry for all users
+    New-ItemProperty -Path $fontsRegPath -Name $fontName -Value $fontName -PropertyType String -Force | Out-Null
+    Write-Host "Registered: $fontName"
+}
 
 # Install all TTF files
-$fontFiles = Get-ChildItem -Path "$env:TEMP\MesloFont" -Filter "*.ttf" -Recurse
+$fontFiles = Get-ChildItem -Path $extractPath -Filter "*.ttf" -Recurse
 foreach ($font in $fontFiles) {
-    Copy-Item $font.FullName -Destination $fontDir -Force
-    Write-Output "Installed: $($font.Name)"
+    Install-FontSystemWide $font.FullName
 }
+
+# Refresh font cache
+Add-Type -AssemblyName PresentationCore
+[System.Windows.Media.Fonts]::SystemFontFamilies | Out-Null
+
+Write-Host "`n✅ Meslo Nerd Fonts installed system-wide successfully!"
+Write-Host "➡️  You can now select 'MesloLGS Nerd Font' in Windows Terminal."
+
 ```
 
 ---
