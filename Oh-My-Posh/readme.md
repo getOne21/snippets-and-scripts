@@ -100,6 +100,9 @@ $env:POSH_THEMES_PATH
 
 # Add this to your PowerShell profile
 notepad $PROFILE
+
+# Load Profile
+. $PROFILE
 ```
 
 Paste this into your profile file:
