@@ -98,6 +98,12 @@ Write-Host "➡️  You can now select 'MesloLGS Nerd Font' in Windows Terminal.
 # Optional: Find the default theme path
 $env:POSH_THEMES_PATH
 
+#Locate your profile
+$PROFILE
+
+#If it doesn’t exist, create it:
+New-Item -Path $PROFILE -ItemType File -Force
+
 # Add this to your PowerShell profile
 notepad $PROFILE
 
