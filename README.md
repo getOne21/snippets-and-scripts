@@ -21,6 +21,8 @@
 ![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)  
 ![Kustomize](https://img.shields.io/badge/Kustomize-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)  
 ![Dapr](https://img.shields.io/badge/Dapr-0D2192?style=for-the-badge&logo=dapr&logoColor=white)  
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)  
+![Devin](https://img.shields.io/badge/Devin-4F46E5?style=for-the-badge&logo=data:image/svg+xml;base64,&logoColor=white)  
 
 ---
 
@@ -40,6 +42,8 @@
 - 🌿 [Git](#-git)  
 - 🍫 [Chocolatey](#-chocolatey)  
 - 💻 [System Setup](#-system-setup)  
+- 🤖 [GitHub Copilot CLI](#-github-copilot-cli)  
+- 🧠 [Devin CLI](#-devin-cli)  
 
 ---
 
@@ -174,6 +178,22 @@
 
 - 🧭 [Setup Guide](System-Setup/readme.md)  
 - 🛠️ [Initial Setup Script](System-Setup/Scripts/initial.ps1)  
+
+---
+
+## 🤖 GitHub Copilot CLI  
+
+> AI-powered coding assistant directly in your terminal — build, debug, and understand code through natural language conversations.  
+
+- 🛠️ [CLI Commands & Reference](GitHub-Copilot-CLI/copilot-cli-commands.md)  
+
+---
+
+## 🧠 Devin CLI  
+
+> A local command-line coding agent with deep Devin Cloud integration — implement features, fix bugs, and automate tasks.  
+
+- 🛠️ [CLI Commands & Reference](Devin-CLI/devin-cli-commands.md)  
 
 ---
 
