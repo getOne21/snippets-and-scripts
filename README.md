@@ -23,6 +23,14 @@
 ![Dapr](https://img.shields.io/badge/Dapr-0D2192?style=for-the-badge&logo=dapr&logoColor=white)  
 ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)  
 ![Devin](https://img.shields.io/badge/Devin-4F46E5?style=for-the-badge&logo=data:image/svg+xml;base64,&logoColor=white)  
+![GitHub CLI](https://img.shields.io/badge/GitHub%20CLI-181717?style=for-the-badge&logo=github&logoColor=white)  
+![kubectl](https://img.shields.io/badge/kubectl-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)  
+![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)  
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)  
+![WSL](https://img.shields.io/badge/WSL-FCC624?style=for-the-badge&logo=linux&logoColor=black)  
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)  
+![Azure DevOps](https://img.shields.io/badge/Azure%20DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)  
+![curl](https://img.shields.io/badge/curl-073551?style=for-the-badge&logo=curl&logoColor=white)  
 
 ---
 
@@ -44,6 +52,14 @@
 - 💻 [System Setup](#-system-setup)  
 - 🤖 [GitHub Copilot CLI](#-github-copilot-cli)  
 - 🧠 [Devin CLI](#-devin-cli)  
+- 🐙 [GitHub CLI (`gh`)](#-github-cli-gh)  
+- ☸️ [kubectl](#%EF%B8%8F-kubectl)  
+- 🐳 [Docker Compose](#-docker-compose)  
+- 💻 [VS Code / Devin Desktop](#-vs-code--devin-desktop)  
+- 🐧 [WSL & Linux CLI](#-wsl--linux-cli)  
+- 📦 [npm / yarn / pnpm](#-npm--yarn--pnpm)  
+- 🔷 [Azure DevOps CLI](#-azure-devops-cli)  
+- 🌐 [curl & API Testing](#-curl--api-testing)  
 
 ---
 
@@ -194,6 +210,70 @@
 > A local command-line coding agent with deep Devin Cloud integration — implement features, fix bugs, and automate tasks.  
 
 - 🛠️ [CLI Commands & Reference](Devin-CLI/devin-cli-commands.md)  
+
+---
+
+## 🐙 GitHub CLI (`gh`)  
+
+> Manage pull requests, issues, repos, and workflows directly from the terminal — deeply integrated with GitHub.  
+
+- 🛠️ [CLI Commands & Reference](GitHub-CLI/gh-cli-commands.md)  
+
+---
+
+## ☸️ kubectl  
+
+> The Kubernetes command-line tool for managing clusters, deploying apps, inspecting resources, and debugging workloads.  
+
+- 🛠️ [Commands & Reference](kubectl/kubectl-commands.md)  
+
+---
+
+## 🐳 Docker Compose  
+
+> Define and run multi-container applications with a single YAML file — orchestrate services, networks, and volumes locally.  
+
+- 🛠️ [Commands & Reference](Docker-Compose/docker-compose-commands.md)  
+
+---
+
+## 💻 VS Code / Devin Desktop  
+
+> Keyboard shortcuts, settings, debugging configs, and useful extensions to supercharge your editor.  
+
+- ⌨️ [Shortcuts & Tips](VS-Code/vscode-shortcuts.md)  
+
+---
+
+## 🐧 WSL & Linux CLI  
+
+> Essential Windows Subsystem for Linux commands and common Linux CLI operations for Windows developers.  
+
+- 🛠️ [Commands & Reference](WSL/wsl-commands.md)  
+
+---
+
+## 📦 npm / yarn / pnpm  
+
+> Essential package manager commands for JavaScript and TypeScript projects.  
+
+- 🛠️ [Commands & Reference](npm-yarn-pnpm/package-manager-commands.md)  
+
+---
+
+## 🔷 Azure DevOps CLI  
+
+> Manage Azure DevOps pipelines, repos, work items, and projects directly from the terminal.  
+
+- 🛠️ [Commands & Reference](Azure-DevOps-CLI/az-devops-commands.md)  
+
+---
+
+## 🌐 curl & API Testing  
+
+> Essential curl patterns for testing APIs, sending requests, handling authentication, and debugging HTTP interactions.  
+
+- 🛠️ [Commands & Reference](curl/curl-commands.md)  
 
 ---
 
