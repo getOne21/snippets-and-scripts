@@ -1,0 +1,318 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
+  "final_space": true,
+  "async": false,
+  "palette": {
+    "bg0": "#282828",
+    "fg0": "#00bbff",
+    "fgDark": "#ffffff",
+
+    "bgPath": "#3c3c3c",
+
+    "bgWarn": "#910000",
+    "bgWarnSoft": "#915B00",
+
+    "bgGit": "#280C2E",
+    "bgGitDirty": "#3d0088",
+    "bgGitMain": "#5A1A1A",
+    "bgGitMainClean": "#4A2A00",
+
+    "bgAz": "#004c85",
+    "bgAws": "#FF9900",
+    "bgGcp": "#4285F4",
+    "bgKube": "#326CE5",
+
+    "bgAngular": "#DD0031",
+    "bgNode": "#339933",
+    "bgNpm": "#e1e1e1",
+
+    "bgDotnet": "#5c2d91",
+
+    "bgPython": "#3572A5",
+    "fgPython": "#FFD43B",
+
+    "bgDocker": "#005ca3",
+
+    "bgJava": "#EA2D2E",
+    "bgGo": "#00ADD8",
+    "bgRust": "#CE422B",
+
+    "bgShell": "#444444",
+    "bgBattery": "#555555",
+    "bgStatus": "#D70000",
+
+    "bgRoot": "#DE2121"
+  },
+
+  "console_title_template": "{{if .Root}} ⚡ {{end}}{{.Folder | replace \"~\" \"🏠\"}} @ {{.HostName}}",
+
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+
+      "segments": [
+        {
+          "type": "os",
+          "style": "powerline",
+          "background": "p:bg0",
+          "foreground": "p:fg0",
+          "template": " {{ .Icon }} |",
+          "leading_diamond": "<transparent></>"
+        },
+
+        {
+          "type": "session",
+          "style": "powerline",
+          "foreground": "p:fg0",
+          "background": "p:bg0",
+          "template": "{{ if .SSHSession }} {{ end }} {{ .UserName }} "
+        },
+
+        {
+          "type": "shell",
+          "style": "diamond",
+          "background": "p:bgShell",
+          "foreground": "#FFFFFF",
+          "template": "  {{ .Name }} "
+        },
+
+        {
+          "type": "root",
+          "style": "diamond",
+          "background": "p:bgRoot",
+          "foreground": "#FFFFFF",
+          "template": " ⚡ ROOT "
+        },
+
+        {
+          "type": "connection",
+          "style": "powerline",
+          "foreground": "p:fg0",
+          "background": "p:bg0",
+          "template": " {{ if eq .Type \"wifi\" }}{{ else if eq .Type \"ethernet\" }}{{ end }} | {{ .SSID }} "
+        },
+
+        {
+          "type": "battery",
+          "style": "diamond",
+          "background": "p:bgBattery",
+          "foreground": "#FFFFFF",
+          "template": " {{ .Icon }} {{ .Percentage }}% "
+        },
+
+        {
+          "type": "az",
+          "style": "diamond",
+          "background": "p:bgAz",
+          "foreground": "#FFFFFF",
+          "properties": {
+            "display_name": true,
+            "display_version": true,
+            "display_error": true
+          },
+          "template": "  {{ .User.Name }} "
+        },
+
+        {
+          "type": "aws",
+          "style": "diamond",
+          "background": "p:bgAws",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "background_templates": [
+            "{{ if or (contains (lower .Profile) \"prod\") (contains (lower .Region) \"prod\") }}#8B0000{{ end }}"
+          ],
+          "template": " {{ if or (contains (lower .Profile) \"prod\") (contains (lower .Region) \"prod\") }}⛔ {{ end }} {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} "
+        },
+
+        {
+          "type": "gcp",
+          "style": "diamond",
+          "background": "p:bgGcp",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "background_templates": [
+            "{{ if and .Project (or (contains (lower .Project) \"prod\") (contains (lower .Project) \"production\")) }}#8B0000{{ end }}"
+          ],
+          "template": " {{ if and .Project (or (contains (lower .Project) \"prod\") (contains (lower .Project) \"production\")) }}⛔ {{ end }} {{ .Project }} "
+        },
+
+        {
+          "type": "path",
+          "style": "diamond",
+          "background": "p:bgPath",
+          "foreground": "p:fgDark",
+          "properties": {
+            "style": "folder"
+          },
+          "template": "  {{ .Path }} "
+        },
+
+        {
+          "type": "angular",
+          "style": "diamond",
+          "background": "p:bgAngular",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "template": "  {{ .Full }} "
+        },
+
+        {
+          "type": "node",
+          "style": "diamond",
+          "background": "p:bgNode",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "template": "  {{ .Full }} "
+        },
+
+        {
+          "type": "npm",
+          "style": "diamond",
+          "background": "p:bgNpm",
+          "foreground": "#d60000",
+          "display_mode": "context",
+          "template": "  {{ .Full }} "
+        },
+
+        {
+          "type": "dotnet",
+          "style": "diamond",
+          "background": "p:bgDotnet",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "template": " 󰪮 {{ .Major }}.{{ .Minor }}.{{ .Patch }} "
+        },
+
+        {
+          "type": "python",
+          "style": "diamond",
+          "background": "p:bgPython",
+          "foreground": "p:fgPython",
+          "display_mode": "context",
+          "template": "  {{ .Full }} "
+        },
+
+        {
+          "type": "go",
+          "style": "diamond",
+          "background": "p:bgGo",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "template": "  {{ .Full }} "
+        },
+
+        {
+          "type": "java",
+          "style": "diamond",
+          "background": "p:bgJava",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "template": "  {{ .Full }} "
+        },
+
+        {
+          "type": "rust",
+          "style": "diamond",
+          "background": "p:bgRust",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "template": "  {{ .Full }} "
+        },
+
+        {
+          "type": "docker",
+          "style": "diamond",
+          "background": "p:bgDocker",
+          "foreground": "#FFFFFF",
+          "display_mode": "files",
+          "template": "  {{ .Version }} "
+        },
+
+        {
+          "type": "kubectl",
+          "style": "diamond",
+          "background": "p:bgKube",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "background_templates": [
+            "{{ if or (contains (lower .Context) \"prod\") (contains (lower .Namespace) \"prod\") }}#FF0000{{ end }}"
+          ],
+          "template": " {{ if or (contains (lower .Namespace) \"prod\") (contains (lower .Context) \"prod\") }}⛔{{ else if or (contains (lower .Namespace) \"staging\") (contains (lower .Context) \"staging\") }}🚧{{ else if or (contains (lower .Namespace) \"dev\") (contains (lower .Context) \"dev\") }}🔧{{ else }}⎈{{ end }} {{ .Context }}{{ if .Namespace }} :: {{ .Namespace }}{{ end }} "
+        },
+
+        {
+          "type": "terraform",
+          "style": "diamond",
+          "background": "p:bgPath",
+          "foreground": "p:fgDark",
+          "display_mode": "context",
+          "template": "  {{ if .Workspace }}{{ .Workspace }}{{ else }}default{{ end }}{{ if .Version }} ({{ .Version }}){{ end }} "
+        },
+
+        {
+          "type": "git",
+          "style": "diamond",
+          "background": "p:bgGit",
+          "foreground": "#FFFFFF",
+          "properties": {
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "branch_icon": " ",
+            "status_colors_enabled": true
+          },
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:bgGitDirty{{ end }}",
+            "{{ if or (gt .Ahead 0) (gt .Behind 0) }}p:bgGitDirty{{ end }}",
+            "{{ if or (eq .HEAD \"main\") (eq .HEAD \"master\") }}p:bgGitMainClean{{ end }}",
+            "{{ if and (or (eq .HEAD \"main\") (eq .HEAD \"master\")) (or (.Working.Changed) (.Staging.Changed) (gt .Ahead 0) (gt .Behind 0)) }}p:bgGitMain{{ end }}"
+          ],
+          "template": " {{ if or (eq .HEAD \"main\") (eq .HEAD \"master\") }}⚠ {{ end }}{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .Ahead 0 }} ↑{{ .Ahead }}{{ end }}{{ if gt .Behind 0 }} ↓{{ .Behind }}{{ end }}{{ if .Staging.Changed }} ✓ {{ .Staging.String }}{{ end }}{{ if .Working.Changed }} ✎ {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} 📦 {{ .StashCount }}{{ end }} "
+        },
+        {
+          "type": "spotify",
+          "style": "diamond",
+          "background": "#00481a",
+          "foreground": "#FFFFFF",
+          "display_mode": "context",
+          "template": "  {{ .Artist }} - {{ .Track }} "
+        },
+
+        {
+          "type": "executiontime",
+          "style": "diamond",
+          "background": "p:bgPath",
+          "foreground": "p:fgDark",
+          "properties": {
+            "style": "dallas",
+            "threshold": 1000
+          },
+          "template": " ⏱ {{ .FormattedMs }} "
+        },
+
+        {
+          "type": "status",
+          "style": "diamond",
+          "background": "p:bgStatus",
+          "foreground": "#FFFFFF",
+          "template": "{{ if ne .Code 0 }} ✘ {{ .Code }} {{ end }}"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:fg0",
+          "template": "❯ "
+        }
+      ]
+    }
+  ]
+}
