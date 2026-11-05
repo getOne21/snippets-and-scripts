@@ -24,6 +24,13 @@ docker run -d --name mycontainer -p 8080:80 myapp:latest
 docker run -v $(pwd)/data:/app/data myapp
 ```
 
+### Run with Environment Variables or Automatically Remove on Exit
+
+```bash
+docker run -d --name mycontainer -e APP_ENV=development myapp
+docker run --rm myapp npm test
+```
+
 ---
 
 ## 📦 Manage Images
@@ -44,6 +51,13 @@ docker rmi <image_id>
 
 ```bash
 docker image prune -a
+```
+
+### Inspect or Tag an Image
+
+```bash
+docker image inspect myapp:latest
+docker tag myapp:latest myregistry/myapp:v1
 ```
 
 ---
@@ -78,6 +92,22 @@ docker start <container_id>
 
 ```bash
 docker rm <container_id>
+```
+
+### Inspect, Restart, or Monitor a Container
+
+```bash
+docker inspect <container_id>
+docker restart <container_id>
+docker stats
+docker top <container_id>
+```
+
+### Copy Files To or From a Container
+
+```bash
+docker cp ./local-file.txt <container_id>:/app/local-file.txt
+docker cp <container_id>:/app/output.txt ./output.txt
 ```
 
 ---
@@ -123,6 +153,23 @@ docker network ls
 ```bash
 docker network create my-network
 ```
+
+---
+
+## 🧩 Docker Compose
+
+Use Compose to define and run multi-container applications from a Compose YAML file:
+
+```bash
+docker compose up -d                   # Build (if needed) and start services
+docker compose ps                      # Show service status
+docker compose logs -f                 # Follow logs from all services
+docker compose exec <service> sh       # Open a shell in a running service
+docker compose down                    # Stop and remove containers and networks
+```
+
+See the [Docker Compose command reference](../Docker-Compose/docker-compose-commands.md) for
+profiles, scaling, configuration, volumes, and other workflows.
 
 ---
 

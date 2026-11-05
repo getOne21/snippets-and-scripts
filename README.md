@@ -81,6 +81,7 @@
 
 - 📦 [Installation Guide](Docker/install.md)  
 - 🛠️ [Scripts & Commands](Docker/scripts-and-commands.md)  
+- 🧩 [Docker Compose Commands](Docker-Compose/docker-compose-commands.md)
 
 ---
 
